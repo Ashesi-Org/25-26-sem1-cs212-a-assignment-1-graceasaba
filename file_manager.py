@@ -18,6 +18,7 @@ def display_welcome():
     print("This is a simple file manager to demonstrate")
     print("Python fundamentals: variables, expressions,")
     print("statements, and functions.")
+    print()
     # TODO: Add a blank line after the welcome message
     
 
@@ -43,6 +44,9 @@ def calculate_file_size():
         
         # Get file size in bytes
         size_bytes = os.path.getsize(filename)
+
+        size_kb = size_bytes / 1024
+        size_mb = size_kb / 1024
         
         # Calculate size in different units
         # TODO: Fix the code below to perform floating point division
@@ -75,8 +79,9 @@ def get_user_choice():
     print()
     
     choice = input("Enter your choice (help/calc/info/quit): ").strip().lower()
+    return choice
     # TODO: Add code to return the choice
-    #testing git push
+    
 
 
 def display_help():
