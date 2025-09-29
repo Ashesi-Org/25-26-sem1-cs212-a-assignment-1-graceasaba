@@ -19,6 +19,7 @@ def display_welcome():
     print("Python fundamentals: variables, expressions,")
     print("statements, and functions.")
     # TODO: Add a blank line after the welcome message
+    
 
 
 def calculate_file_size():
@@ -75,6 +76,7 @@ def get_user_choice():
     
     choice = input("Enter your choice (help/calc/info/quit): ").strip().lower()
     # TODO: Add code to return the choice
+    #testing git push
 
 
 def display_help():
