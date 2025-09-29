@@ -47,7 +47,6 @@ def calculate_file_size():
         size_kb = size_bytes / 1024
         size_mb = size_kb / 1024
 
-        
         # Calculate size in different units
         # TODO: Fix the code below to perform floating point division
         size_kb = size_bytes // 1024
