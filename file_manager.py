@@ -162,7 +162,8 @@ def process_user_command(choice, * , running, show_goodbye=True, goodbye_message
 
 def main():
     """Main program loop."""
-    user = "Welcome to Ashesi University"  
+    user = "Welcome to Ashesi University" 
+main() 
  # Display welcome message
     # TODO: Call the function to display the welcome message
     
