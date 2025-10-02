@@ -123,8 +123,9 @@ def display_info():
 # 2. goodbye_message defaults to "Thank you for using Python CLI File Manager!"
 # 3. invalid_choice_prefix defaults to "Invalid choice:"
 # 4. valid_commands defaults to "help, calc, info, quit"
-def process_user_command(choice, running, show_goodbye, goodbye_message, 
-                        invalid_choice_prefix, valid_commands):
+def process_user_command(choice, running, * , show_goodbye, goodbye_message="Thank you using Python CLI File Manager!", 
+                        invalid_choice_prefix="Invalid choice:", valid_commands="help, calc, infor, quit"):
+    
     """
     Process a user command and return the updated running state.
     
