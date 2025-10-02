@@ -123,9 +123,8 @@ def display_info():
 # 2. goodbye_message defaults to "Thank you for using Python CLI File Manager!"
 # 3. invalid_choice_prefix defaults to "Invalid choice:"
 # 4. valid_commands defaults to "help, calc, info, quit"
-def process_user_command(choice, running, * , show_goodbye, goodbye_message="Thank you using Python CLI File Manager!", 
-                        invalid_choice_prefix="Invalid choice:", valid_commands="help, calc, infor, quit"):
-    
+def process_user_command(choice, * , running, show_goodbye=True, goodbye_message ="Thank you for using Python CLI File Manager!", 
+                        invalid_choice_prefix = "Invalid choice:", valid_commands="help, calc, info, quit"):
     """
     Process a user command and return the updated running state.
     
@@ -163,12 +162,16 @@ def process_user_command(choice, running, * , show_goodbye, goodbye_message="Tha
 
 def main():
     """Main program loop."""
-    # Display welcome message
+    user = "Welcome to Ashesi University"
+main()  
+ # Display welcome message
     # TODO: Call the function to display the welcome message
     
     # Main command loop
     # TODO: Initialize a variable to control the loop. Hint set running = True
+    running = True
     while running:
+        choice = input("\nEnter command (help/calc/info/quit): ")
         try:
             choice = get_user_choice()
             
