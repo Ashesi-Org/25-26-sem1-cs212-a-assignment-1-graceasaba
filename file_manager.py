@@ -13,7 +13,7 @@ import sys
 def display_welcome():
     """Display welcome message to the user."""
     print("=" * 50)
-    print("   Welcome to Python CLI File Manager!")
+    print("Welcome to Python CLI File Manager!")
     print("=" * 50)
     print("This is a simple file manager to demonstrate")
     print("Python fundamentals: variables, expressions,")
@@ -169,6 +169,7 @@ main()
     
     # Main command loop
     # TODO: Initialize a variable to control the loop. Hint set running = True
+    running = True
     while running:
         choice = input("\nEnter command (help/calc/info/quit): ")
         try:
