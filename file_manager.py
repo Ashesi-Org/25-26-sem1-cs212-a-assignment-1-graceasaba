@@ -162,14 +162,12 @@ def process_user_command(choice, * , running, show_goodbye=True, goodbye_message
 
 def main():
     """Main program loop."""
-    user = "Welcome to Ashesi University"
-main()  
+    user = "Welcome to Ashesi University"  
  # Display welcome message
     # TODO: Call the function to display the welcome message
     
     # Main command loop
     # TODO: Initialize a variable to control the loop. Hint set running = True
-    running = True
     while running:
         choice = input("\nEnter command (help/calc/info/quit): ")
         try:
